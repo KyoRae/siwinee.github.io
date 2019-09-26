@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery.pagepiling.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="pagepiling">
+        <div class="section home-area" id="home">
+            <div class="wrapper">
+                <nav>
+                    <ul id="myMenu">
+                        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+                        <li data-menuanchor="about"><a href="#about">About</a></li>
+                        <li data-menuanchor="product"><a href="#product">Products</a></li>
+                        <li data-menuanchor="service"><a href="#service">Services</a></li>
+                        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="banner-area">
+                    <h2>Ditch Your Case and<br> get an UPGARDE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad in temporibus porro quia, non iste hic, suscipit vitae, dolor illo inventore doloribus neque tenetur soluta amet impedit eligendi possimus!</p>
+                </div>
+                <div class="fb-customerchat"
+ page_id="<PAGE_ID>"
+ ref="<OPTIONAL_WEBHOOK_PARAM>"
+ theme_color="<HEX_COLOR_CODE>"
+ logged_in_greeting="<GREETING_MESSAGE_FOR_LOGGED_IN_USERS>"
+ logged_out_greeting="<GREETING_MESSAGE_FOR_LOGGED_OUT_USERS>"></div> 
+            </div>
+        </div>
+        <div class="section about-area" id="about">
+            <div class="wrapper">
+                    <div class="row">
+                            <div class="column left">
+                              <h2>Get to know us</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolores! Ut quibusdam repudiandae aperiam quas nam dolor molestias voluptatem eligendi placeat sapiente voluptatum laborum, repellendus ad obcaecati recusandae facere consequuntur.</p>
+                            </div>
+                            <div class="column right">
+                              <video controls autoplay width="600" height="400" src="/video/bf7787c6052d6ecc947df624dcd9de01.mp4"></video>
+                            </div>
+                          </div>
+            </div>
+        </div>
+
+        <div class="section product-area" id="product">
+            <div class="slide-title">
+                <h2>Our Collection</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias vero animi quae cumque dignissimos ut neque soluta? Repellat nostrum quaerat commodi voluptatum. Recusandae, sunt. Incidunt pariatur dolor culpa commodi autem.</p>
+            </div>
+                <div class="slider-frame">
+                    <div class="slide-images">
+                            <div class="img-container">
+                                <img src="img/c2.JPG">
+                            </div>
+                            <div class="img-container">
+                                <img src="img/c1.JPG">
+                            </div>
+                            
+                    </div>
+                </div>
+        </div>
+
+        <div class="section services-area" id="service">
+            <div class="wrapper">
+                <h3>Our Services</h3>
+                <p>	• Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, commodi quisquam non similique sequi dolorem inventore neque illo eos temporibus quaerat repellat harum itaque, expedita eaque ipsa suscipit impedit esse.</p>
+                <p>	• Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi quis corporis dolorum eligendi nobis ullam ducimus perspiciatis aliquid architecto officia quos nemo dolores libero doloribus, quasi minus sint? Eaque.</p>
+                <p>	• Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis rem sed aliquid, dolorum dolores sequi tempore optio. Maxime itaque cum molestias! Error, perferendis. Quis molestiae aliquid ad est aliquam?</p>
+            </div>
+        </div>
+
+        <div class="section contact-area" id="contact">
+            <div class="wrapper">
+                <h3>Pitch Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                <p><input type="text" placeholder="Enter your name"></p>
+                <p><input type="email" placeholder="Enter your email"></p>
+                <p><textarea cols="30" rows="10" placeholder="Enter your message"></textarea></p>
+                <p><input type="submit" value="submit"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.pagepiling.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+            direction: 'vertical',
+            sectionsColor: ['#f2f2f2', '#FF9AA2', '#fffff', '#ff8c7b', '#F9665E'],
+            anchors: ['home', 'about', 'product', 'service', 'contact'],
+        menu: '#myMenu',
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['Home', 'About', 'Products', 'Services','Contact']
+            }
+        });
+    });
+    </script>
+</body>
+</html>

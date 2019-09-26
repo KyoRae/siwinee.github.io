@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap");
+h3 {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 21px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+nav ul li :hover {
+  -webkit-box-shadow: inset 0 -1px 0 0 white;
+          box-shadow: inset 0 -1px 0 0 white;
+}
+
+.home-area {
+  background-image: url(/img/a4b56a2a50f195585bf3bc07d8462636_f5836-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-area .banner-area h2 {
+  color: white;
+  font-size: 55px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.home-area .banner-area p {
+  padding: 0 50% 0 0;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.about-area .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-area .column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.about-area .column h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+.about-area .column p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+}
+
+.about-area .left {
+  padding-top: 50px;
+}
+
+.contact-area {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-area input[type=text], .contact-area [type=email] {
+  width: 30%;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.contact-area input[type=submit] {
+  background: saddlebrown;
+  padding: 10px 50px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.contact-area textarea {
+  width: 30%;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*resposive*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 90%;
+  }
+  .contact-area input[type=text], .contact-area [type=email] {
+    width: 85%;
+    height: 30px;
+  }
+  .contact-area textarea {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
+  nav {
+    display: none;
+  }
+  .home-area h2 {
+    font-size: 25px;
+  }
+  .home-area h3 {
+    font-size: 30px;
+  }
+  .home-area P {
+    font-size: 14px;
+  }
+  .home-area .banner-area p {
+    padding: 0 12% 0 0;
+  }
+  .about-area p, .product-area p, .services-area p, .contact-area p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .contact-area input[type=text], .contact-area [type=email] {
+    width: 85%;
+    height: 30px;
+  }
+  .contact-area textarea {
+    width: 85%;
+  }
+}
+
+.product-area {
+  background-color: white;
+  /*---------- SLIDE ANIMATION --------------*/
+}
+
+.product-area .slide-title h2 {
+  margin-left: 500px;
+  font-size: 45px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  text-align: center;
+}
+
+.product-area .slide-title p {
+  margin-left: 200px;
+  font-size: 22px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  width: 1200px;
+  text-align: center;
+}
+
+.product-area .slider-frame {
+  overflow: hidden;
+  height: 400px;
+  width: 2400px;
+  margin-top: 20px;
+}
+
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: 1200px;
+  }
+  30% {
+    left: 1200px;
+  }
+  40% {
+    left: 2400px;
+  }
+  50% {
+    left: 2400px;
+  }
+  60% {
+    left: 1200px;
+  }
+  70% {
+    left: 1200px;
+  }
+  80% {
+    left: 0px;
+  }
+  90% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.product-area .slide-images {
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.product-area .img-container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+}
+/*# sourceMappingURL=style.css.map */
